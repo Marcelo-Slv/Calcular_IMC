@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calculr_inc.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+
+            <Image Source="humano.png"
+                   HeightRequest="185"
+                   Aspect="AspectFit"
+                   SemanticProperties.Description="humano" />
+
+            <Label Text="Calcule o seu IMC!"
+                   Style="{StaticResource Headline}"
+                   SemanticProperties.HeadingLevel="Level1" />
+
+            <Editor x:Name="NotasEditor"
+                    BackgroundColor="White"
+                    Placeholder="Digite o seu nome aqui..." />
+
+            <Editor x:Name="idade"
+                    BackgroundColor="White"
+                    Placeholder="Digite a sua idade aqui..." />
+
+            <Editor x:Name="altura"
+                    Placeholder="Digite a sua altura aqui..." />
+
+            <Editor x:Name="peso"
+                    Placeholder="Digite o seu peso aqui..." />
+
+            <Button x:Name="salvarBtn"
+                    Text="Salvar" 
+                    Clicked="AoClicarNoSalvar"
+                    HorizontalOptions="Fill" />
+
+            <Button x:Name="carregarBtn" 
+                    Text="Carregar" 
+                    Clicked="AoClicarCarregar"
+                    HorizontalOptions="Fill" />
+
+            <Button x:Name="calcularImcBtn"
+                    Text="Calcular IMC" 
+                    Clicked="AoClicarCalcularImc"
+                    HorizontalOptions="Fill" 
+                    BackgroundColor="DeepSkyBlue"
+                    TextColor="White" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

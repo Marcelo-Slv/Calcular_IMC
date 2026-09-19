@@ -1,0 +1,38 @@
+## .NET build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+.vs/
+.vsconfig
+
+## Rider
+.idea/
+*.sln.iml
+
+## Visual Studio Code
+.vscode/
+*.code-workspace
+
+## Flutter/Dart/Python/JS (common block)
+node_modules/
+*.pyc
+__pycache__/
+.env
+
+## OS
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+## App packaging
+*.appx
+*.appxbundle
+*.msix
+*.msixbundle
+*.apk
+*.aab
